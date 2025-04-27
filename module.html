@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta http-equiv="X-UA-Compatible" content="ie=edge">
+          <title>Ethics CS Final Project Module</title>
+          <link rel="stylesheet" href="./style.css">
+          <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+      <div class="center">
+        <h1>Healthcare Module</h1>
+      </div>
+      <p></p>
+      <div class="centered">
+        <button class="buttonNav" onclick="window.location.href='/index.html';">Back to Page</button>
+    </div>
+      <div class="stdbody">
+        <p> 
+        </p>
+      </div>
+      <div class="centered">
+        <button onclick="getMoney()">Get Money</button>
+      </div>
+      <div class="centered">
+          <h3>You currently have: $</h3>
+          <h3 id="money">...</h3>
+      </div>
+      <div class="centered">
+          <button onclick="spendMoney(100000)">Spend Money</button>
+      </div>
+      <div class="centered">
+          <h3 id="output">...</h3>
+      </div>
+    </main>
+    <script src="scripts/functions.js"></script>
+  </body>
+</html>
