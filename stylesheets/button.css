@@ -3,7 +3,7 @@ button {
     justify-content: left;
     padding: 10px 20px;
     font-size: 20px;
-    background-color: #ce7623;
+    background-color: #c023cebc;
     color: rgb(230, 230, 230);
     border: none;
     border-radius: 5px;
@@ -28,3 +28,10 @@ button:hover {
     transform: scale(1.1);
     box-shadow: 0 0 15px #bc1a63;
 }
+
+.button-container {
+    display: flex;            /* Makes the buttons line up horizontally */
+    justify-content: center;  /* Centers the buttons horizontally in the page */
+    gap: 10px;                /* Adds 10px space between each button */
+    margin-top: 10px;         /* Adds space above the buttons */
+  }
