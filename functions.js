@@ -159,9 +159,12 @@ function showMoney(){
 function addModule(name){
 
     if (name == "firewall" || name == "Firewall"){
+        spendMoney(50000);
+            
+    }
+    else if (name == "encryption" || name == "encryption"){
         
     }
-
 }
 
 
