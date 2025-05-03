@@ -1,3 +1,14 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const container = document.querySelector('.dot-grid');
+    for (let i = 0; i < 100; i++) {
+      const dot = document.createElement('div');
+      dot.classList.add('dot');
+      if (i >= 48) {
+        dot.classList.add('red');
+      }
+      container.appendChild(dot);
+    }
+});
 
 let defense = Defense();
 document.getElementById("money") = 0;
@@ -168,3 +179,6 @@ function addModule(name){
 }
 
 
+// This code creates our nice little dot grid on the "about page.""
+
+//we need this so it renders right when the page loads

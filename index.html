@@ -1,41 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Ethics CS Final Project</title>
-        <link rel="stylesheet" href="./stylesheets/style.css">
-        <link rel="stylesheet" href="./stylesheets/animation.css">
-        <link rel="stylesheet" href="./stylesheets/button.css">
-        <link rel="icon" href="./favicon.ico" type="image/x-icon">
-    </head>
+  <!--Document Information-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Clean Website</title>
 
-    <body>
-        <div class="center">
-            <h1>Healthcare Ethics</h1>
-        </div>
-        <div class="centered">
-            <div class="stdbody">
-                <p>For our project we are going to be looking into the issue of cybersecurity in healthcare.<br><br>
-                    Recently, there have been a large number of issues with cyberattacks on multiple healthcare and insurance providers. 
-                    Change Healthcare, which was related to over ⅓ of Americans, suffered a data breach so large that hospitals & insurance companies across the country suffered financial losses and malfunction within multiple healthcare sectors.
-                    <br><br>Just in February 2025, the Cayuga Medical Center in NY suffered a cyberattack which crippled their technological systems and forced multiple patients to either have care delayed or be transferred to a different facility.
-                    So it’s important not only to deal with these issues, but inform the public and US Legislature of these issues so that they will not be repeated.
-                </p>
-            </div>
-        </div>
-        <div class="center1">
-            <h2>Click Module below</h2>
-        </div>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-        <div class="centered">
-            <button class="buttonNav" onclick="window.location.href='/module.html';">Go To Module</button>
-        </div>
-        <footer>
-            <p>&copy; 2025 Myers, Novak. All rights reserved.</p>
-        </footer>
+    <title>Ethics CS Final Project</title>
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+    <link rel="stylesheet" href="./stylesheets/animation.css" />
+    <link rel="stylesheet" href="./stylesheets/button.css" />
+    <link rel="stylesheet" href="./stylesheets/meat.css" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+  </head>
+
+  <!--Actual Meat and Potatoes-->
+  <body>
+    <!--Potatoes (Navbar)-->
+    <div class="navbar">
+      <a href="/index.html"><div class="logo">Healthcare Cybersecurity Project</div> </a>
+
+      <nav>
+        <a href="/index.html">About</a>
+        <a href="/module.html">Module</a>
+        <a href="#">Sources</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+
+    <!--Meat (Body)-->
+    <div class="meat">
+      <div class="center">
+        <h1>About</h1>
+      </div>
+
+      <div class="text">
+          For our project we are going to be looking into the issue of
+          cybersecurity in healthcare.<br>
+      </div>
+      
+      <div class="sidebyside">
+        <p>
+          Recently, there have been a large number of issues with
+          cyberattacks on multiple healthcare and insurance providers.
+          Change Healthcare, which was related to over ⅓ of Americans,
+          suffered a data breach so large that hospitals & insurance
+          companies across the country suffered financial losses and
+          malfunction within multiple healthcare sectors.
+        </p>
+        <div class="dot-grid-container"><div class="dot-grid"></div></div>
+      </div>
+
+      <div class="text">
+        Just in February 2025, the Cayuga Medical Center in NY suffered a
+        cyberattack which crippled their technological systems and forced
+        multiple patients to either have care delayed or be transferred to a
+        different facility. So it's important not only to deal with these
+        issues, but inform the public and US Legislature of these issues so
+        that they will not be repeated.
+      </div>
+      <div class="center1">
+        <h2>Click Module below</h2>
+      </div>
+
+      <div class="centered">
+        <button
+          class="buttonNav"
+          onclick="window.location.href='/module.html';"
+        >
+          Go To Module
+        </button>
+      </div>
+    </div>
+
+    <!--Gravy (Footer)-->
+    <footer>
+      <p>&copy; 2025 Myers, Novak. All rights reserved.</p>
+    </footer>
+
+    <!--Scripts-->
     <script src="functions.js"></script>
-
-    </body>
+  </body>
 </html>

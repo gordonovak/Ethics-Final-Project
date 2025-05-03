@@ -1,0 +1,75 @@
+.meat {
+    padding-top: 20px;
+    background-color: rgb(255, 255, 255);
+    font-size:large
+}
+.center {
+    display: flex;
+    justify-content: center;
+    margin: -20px;
+    margin-bottom: 0px;
+    background-color: rgb(243, 243, 243);
+    
+}
+
+.center1 {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.centered{
+    display:flex;
+    justify-content: center;
+}
+
+.text{
+    margin-left:20%;
+    margin-right:20%;
+    margin-bottom: 10px;
+}
+
+
+.dot-grid-container{
+    margin-right: 50px;
+    padding-top:20px;
+}
+.dot-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 3px);
+    grid-template-rows: repeat(10, 3px);
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    transition: background-color 0.3s ease;
+}
+
+.dot.red {
+    background-color: #e63946;
+}
+
+.caption {
+    font-size: 1rem;
+    color: #333;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.sidebyside {
+    display: flex;
+    margin-left:20%;
+    margin-right:20%;
+    gap: 20px;
+}
+
+.box{
+    padding: 10px 15px;
+    box-sizing: border-box;
+}

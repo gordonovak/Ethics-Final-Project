@@ -1,31 +1,10 @@
 body {
     margin: 0;
-    padding: 20px;
+    padding: 0px;
     background-color: rgb(255, 255, 255);
-    font-family: 'Georgia', sans-serif;
+    font-family: 'Lato', sans-serif;
     overflow-x: hidden;
     color: rgb(63, 63, 63);
-    
-}
-
-.center {
-    display: flex;
-    justify-content: center;
-    margin: -20px;
-    margin-bottom: 0px;
-    background-color: rgb(243, 243, 243);
-    
-}
-
-.center1 {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(255, 255, 255);
-}
-
-.centered{
-    display:flex;
-    justify-content: center;
 }
 
 footer {
@@ -37,4 +16,43 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-  }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.navbar a:hover {
+    color: #ed9cf1;
+}
+
+.content {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+}
