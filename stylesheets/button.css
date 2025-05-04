@@ -81,7 +81,7 @@ button:hover {
 }
 
 .boughtbutton:hover {
-    background-color: #8733d1;
+    background-color: #9f33d1;
     transform: scale(1.01);
     box-shadow: 0 0 30px 10px #d08aff87;
 }
@@ -122,9 +122,8 @@ button:hover {
 
 .button-container {
     display: flex;    
-    justify-content: auto; 
+    justify-content: center; 
     gap: 10px;               
-    margin-top: 10px;    
-    padding: auto;    
+    margin-top: 10px;        
 }
 

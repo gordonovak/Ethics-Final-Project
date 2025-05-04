@@ -10,17 +10,25 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="./stylesheets/style.css" />
     <link rel="stylesheet" href="./stylesheets/animation.css" />
     <link rel="stylesheet" href="./stylesheets/button.css" />
     <link rel="stylesheet" href="./stylesheets/meat.css" />
+    <link rel="stylesheet" href="./stylesheets/tooltip.css" />
+    <link rel="stylesheet" href="./stylesheets/moneybar.css" />
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <!--Navbar-->
     <div class="navbar">
-      <a href="/index.html"><div class="logo">Healthcare Cybersecurity Project</div> </a>
+      <a href="/index.html"
+        ><div class="logo">Healthcare Cybersecurity Project</div>
+      </a>
 
       <nav>
         <a href="/index.html">About</a>
@@ -34,54 +42,245 @@
       <div class="center">
         <h1>Healthcare Module</h1>
       </div>
-      <div class="centered">
-        <button class="buttonNav" onclick="window.location.href='/index.html';">
-          Back to Page
-        </button>
+      <div class="center1">
+        <h3>Welcome to the Healthcare Cybersecurity Ethics Module!</h3>
       </div>
-      <div class="centered">
-        <h3>Select Which Types of Cyber Defense Methods You Would Like to Have</h3>
+      <div class="abouttext">
+        You are a ceo at a major healthcare company. You are in charge of 5
+        hospitals that help hundreds of patients a day. Your company has a
+        random budget between 665000 and 380000 dollars on cyber security in
+        order to protect the sensitive data of your patients that you must
+        manage every day. Each cybersecurity tactics cost is shwo on the left of
+        the tactics box. Pick ones you think that will work the best to protect
+        your patients sensitive info. Make sure you prevent attacks from both
+        internal and external cyber attacks<br /><br />
       </div>
+
       <div class="centered">
-        <div class="stdbody">
-          <h3>Make Sure You Dont Go Overbudget!!</h3>
-        </div>
-      </div>
-      <div class="stdbody">
-        <p></p>
-      </div>
-      <div class="centered">
-        <button onclick="getMoney()">Get Money</button>
-      </div>
-      <div class="centered">
-        <h3>You currently have: $</h3>
-        <h3 id="money">...</h3>
+        <h3>
+          Select Which Types of Cyber Defense Methods You Would Like to Have
+        </h3>
       </div>
       <div class="centered">
-        <button onclick="spendMoney(100000)">Spend Money</button>
+        <h3>Make Sure You Dont Go Overbudget!!</h3>
       </div>
+      <!--class element bugtest-->
       <div class="centered">
-        <h3 id="output">...</h3>
-      </div>
-      <div class="button-container">
-        <button onclick="addModule(Firewall)">Firewall</button>
-        <button onclick="addModule(Network)">
-          Network Intrusion Detection
-        </button>
-        <button onclick="spendMoney(Encryption)">Encryption</button>
-      </div>
-      <div class="button-container">
-        <button onclick="addModule(Antivirus)">Antivirus Programs</button>
-        <button onclick="addModule(Two-step)">Two step Authentication</button>
-        <button onclick="addModule(Scanners)">Vulnerability scanners</button>
+        <h3 style="height: 0px; opacity: 0" id="tester">class add here...</h3>
       </div>
 
       
-    </div>
-	<footer>
-		<p>&copy; 2025 Myers, Novak. All rights reserved.</p>
-	</footer>
 
-	<script src="scripts/functions.js"></script>
+      <!--allows us to have the moneybar-->
+      <div class="moneybar-flex">
+        <div>
+          <b>Total Budget</b>
+          <p></p>
+          <div class="centered1"></div>
+          <div class="bar-container">
+            <div class="bar-fill" id="bar"></div>
+          </div>
+          <div class="flex-center">
+            <div class="moneybar-budget">
+              
+              $<div id="money"></div>
+            </div>
+          </div>
+        </div>
+        <div class="module-center">
+          <div class="flex-center">
+            <div class="flex-right">
+              <!--Firewall button-->
+              <div class="button-container">
+                <!--Beginning of the button-container w/money-->
+                <div class="module-element">
+                  <!--Monetary cost-->
+                  <div style="margin-right: auto; display: flex">
+                    <div class="cost-element">$120,000</div>
+                  </div>
+
+                  <div class="tooltip-container">
+                    <!--Name of the Thing-->
+                    <div
+                      id="firewall"
+                      class="modbutton"
+                      onclick="addModule('Firewall')"
+                    >
+                      Firewall
+                    </div>
+                    <div class="tooltip-text">
+                      <b>Firewall</b> is best at protecting from cyberattacks that come
+                      from external sources. However they are not as good when
+                      someone plugs into your system.<br> <u>External:</u> 9 <br><u>Internal:</u> 3
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--Network Instrusion Detection-->
+              <div class="button-container">
+                <!--Beginning of the button-container w/money-->
+                <div class="module-element">
+                  <!--Monetary cost-->
+                  <div style="margin-right: auto; display: flex">
+                    <div class="cost-element">$220,000</div>
+                  </div>
+
+                  <div class="tooltip-container">
+                    <!--Name of the Thing-->
+                    <div
+                      id="network"
+                      class="modbutton"
+                      onclick="addModule('Network')"
+                    >
+                      N.I.D.
+                    </div>
+                    <div class="tooltip-text">
+                      (Network Intrusion Detection) Opposite of a firewall. It
+                      is great against Internal attacks from within but not as
+                      strong from External attacks. External: 3 Internal: 9
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex-right">
+              <!--Encryption button-->
+              <div class="button-container">
+                <!--Beginning of the button-container w/money-->
+                <div class="module-element">
+                  <!--Monetary cost-->
+                  <div style="margin-right: auto; display: flex">
+                    <div class="cost-element">$220,000</div>
+                  </div>
+
+                  <div class="tooltip-container">
+                    <!--Name of the Thing-->
+                    <div
+                      id="encryption"
+                      class="modbutton"
+                      onclick="addModule('Encryption')"
+                    >
+                      Encryption
+                    </div>
+                    <div class="tooltip-text">
+                      Encryption is a great overall defense. It protects equally
+                      as strong from both attacks and helps you transmit patient
+                      data without it being leaked. External: 6 Internal: 6
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--Network Instrusion Detection-->
+              <div class="button-container">
+                <!--Beginning of the button-container w/money-->
+                <div class="module-element">
+                  <!--Monetary cost-->
+                  <div style="margin-right: auto; display: flex">
+                    <div class="cost-element">$220,000</div>
+                  </div>
+
+                  <div class="tooltip-container">
+                    <!--Name of the Thing-->
+                    <div
+                      id="antivirus"
+                      class="modbutton"
+                      onclick="addModule('Antivirus')"
+                    >
+                      Antivirus
+                    </div>
+                    <div class="tooltip-text">
+                      Antivirus software is great at protecting against both.
+                      Any virus that enters the system is likely to be stopped.
+                      External: 8 Internal: 7
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-center">
+            <!--Two-step Verrification button-->
+            <div class="button-container">
+              <!--Beginning of the button-container w/money-->
+              <div class="module-element">
+                <!--Monetary cost-->
+                <div style="margin-right: auto; display: flex">
+                  <div class="cost-element">$220,000</div>
+                </div>
+
+                <div class="tooltip-container">
+                  <!--Name of the Thing-->
+                  <div
+                    id="twostep"
+                    class="modbutton"
+                    onclick="addModule('TwoStep')"
+                  >
+                    Two-Factor Authentication
+                  </div>
+                  <div class="tooltip-text">
+                    Two-step Verification is a more simple cybersecurity tactic.
+                    This prevents attacks that are made through patients'
+                    accounts. External: 5 Internal: 5
+                  </div>
+                </div>
+              </div>
+
+              <!--Vulnerability Scanners-->
+              <div class="button-container">
+                <!--Beginning of the button-container w/money-->
+                <div class="module-element">
+                  <!--Monetary cost-->
+                  <div class="cost-element">$150,000</div>
+
+                  <div class="tooltip-container">
+                    <!--Name of the Thing-->
+                    <div
+                      id="scanners"
+                      class="modbutton"
+                      onclick="addModule('Scanners')"
+                    >
+                      Vulnerability Scanners
+                    </div>
+                    <div class="tooltip-text">
+                      Vulnerability scanners improve your cybersecurity systems
+                      everyday. These look for holes in your security tactics so
+                      you are able to fix them. <br><u>External:</u> 6 <br><u>Internal: 5</u>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p></p>
+      <!--Gives user stats on strength & vulnerability-->
+      <div class="flex-center">
+        <div class="infoBox">
+          Local Breach Strength:
+          <div id="phys" class="stat">nope</div>
+        </div>
+        <div class="infoBox">
+          External Breach Strength:
+          <div id="breach" class="stat">nope</div>
+        </div>
+      </div>
+      <p></p>
+      <div class="centered">
+        <button onclick="window.location.href='Submit.html'">Submit</button>
+      </div>
+    </div>
+
+    <h3 style="opacity: 0" id="output">output here...</h3>
+
+    <footer>
+      <p>&copy; 2025 Myers, Novak. All rights reserved.</p>
+    </footer>
+
+    <script src="functions.js"></script>
   </body>
 </html>

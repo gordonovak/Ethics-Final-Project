@@ -58,14 +58,21 @@
 
 .infoBox{
     padding:10px;
-    display:flex;
-    justify-content:center;
     border: 1px solid #ccc;
     background-color: #e7e7e7;
     font-family: 'IBM Plex Sans', sans-serif;
-    width: 250px;
+    width: auto;
+    display:flex;
 }
 
 .infoBox .stat{
-    width: 200px;
+    width: 100px;
+    display:flex;
+    justify-content: right;
+}
+
+.infoBox .flavor{
+    display:flex;
+    justify-content: left;
+    width: 250px;
 }
