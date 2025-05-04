@@ -1,0 +1,42 @@
+.bar-container {
+    width: auto;
+    height: 225px;
+    background-color: #bdb39f;
+    border: 1px solid #999;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 0%;
+    width: 100%;
+    background-color: #ff4444;
+    transition: height 0.25s ease, background-color 0.25s ease;
+    animation: pulse 1.5s infinite ease-in-out;
+
+}
+
+@keyframes pulse {
+  0%   { transform: scaleY(1); opacity: 1; }
+  50%  { transform: scaleY(1.05); opacity: 0.8; }
+  100% { transform: scaleY(1); opacity: 1; }
+}
+
+.moneybar-flex{
+    display:flex;
+    margin-left: 30%;
+    margin-right: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.moneybar-budget{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    font-size:larger;
+    border: 2px dotted #ccc;
+    width: 90px;
+}

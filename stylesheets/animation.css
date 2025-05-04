@@ -49,3 +49,15 @@
 .meat > *:nth-child(11) {
     animation-delay: 0.87s;
 }
+
+.meat > *:nth-child(12) {
+    animation-delay: 0.9s;
+}
+
+.meat > *:nth-child(13) {
+    animation-delay: 0.93s;
+}
+
+.meat > *:nth-child(14) {
+    animation-delay: 0.96s;
+}

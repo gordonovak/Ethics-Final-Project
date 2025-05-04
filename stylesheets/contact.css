@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center; 
+}
+
+.text-block {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px;
+    background-color: #ececec;
+    border-radius: 10px;
+    color: rgb(55, 55, 55);
+    border: 1px solid #b3b3b3;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 0px;
+}
+
+.container img {
+    display:flex;
+    margin:5px auto;
+    width: auto;
+    height: 300px;
+    border-radius: 5px;
+    border-color: #5f5b5b;
+    border:2px, solid, #5f5b5b;
+}

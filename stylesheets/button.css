@@ -1,22 +1,113 @@
 button {
     display: flex;
+    justify-content: center;
+    padding: 7px 15px;
+    margin-top: 1.5px;
+    margin-bottom: 1.5px;
+    font-size: 20px;
+    background-color: #e79e00bc;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.025);
+    box-shadow: 0 0 15px #45a049;
+}
+
+.modbutton {
+    display: flex;
+    justify-content: center;
+    padding: 7px 15px;
+    margin-top: 1.5px;
+    margin-bottom: 1.5px;
+    font-size: 20px;
+    background-color: #aacd00bc;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.modbutton:hover {
+    background-color: #45a049;
+    transform: scale(1.025);
+    box-shadow: 0 0 15px #45a049;
+}
+
+.deadbutton {
+    display: flex;
+    justify-content: center;
+    padding: 7px 15px;
+    margin-top: 1.5px;
+    margin-bottom: 1.5px;
+    font-size: 20px;
+    background-color: #a7a7a7bc;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.deadbutton:hover {
+    background-color: #a04545;
+    transform: scale(1.01);
+    box-shadow: 0 0 30px 10px #bd000087;
+}
+
+.boughtbutton {
+    display: flex;
+    justify-content: center;
+    padding: 7px 15px;
+    margin-top: 1.5px;
+    margin-bottom: 1.5px;
+    font-size: 20px;
+    background-color: #009fe3bc;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.boughtbutton:hover {
+    background-color: #8733d1;
+    transform: scale(1.01);
+    box-shadow: 0 0 30px 10px #d08aff87;
+}
+
+
+
+.gdocbutton {
+    padding-top:50px;
+    display: flex;
     justify-content: left;
     padding: 10px 20px;
     font-size: 20px;
-    background-color: #c023cebc;
-    color: rgb(230, 230, 230);
+    background-color: #43afc9bc;
+    color: rgb(255, 255, 255);
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-
-button:hover {
-    background-color: #45a049;
+.gdocbutton:hover {
+    background-color: #489fd8;
     transform: scale(1.05);
-    box-shadow: 0 0 15px #45a049;
+    box-shadow: 0 0 30 30 #3fa984;
 }
+
 
 .buttonNav{
     background-color: #a95cfb;
@@ -30,8 +121,10 @@ button:hover {
 }
 
 .button-container {
-    display: flex;            /* Makes the buttons line up horizontally */
-    justify-content: center;  /* Centers the buttons horizontally in the page */
-    gap: 10px;                /* Adds 10px space between each button */
-    margin-top: 10px;         /* Adds space above the buttons */
-  }
+    display: flex;    
+    justify-content: auto; 
+    gap: 10px;               
+    margin-top: 10px;    
+    padding: auto;    
+}
+
