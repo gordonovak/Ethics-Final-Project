@@ -42,6 +42,50 @@ button:hover {
     box-shadow: 0 0 15px #45a049;
 }
 
+.execbutton {
+    display: flex;
+    justify-content: center;
+    padding: 7px 15px;
+    margin-top: 1.5px;
+    margin-bottom: 1.5px;
+    font-size: 20px;
+    background-color: #db6115bc;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.execbutton:hover {
+    background-color: #c46ec9;
+    transform: scale(1.035);
+    box-shadow: 0 0 20px 10px #be449e;
+}
+
+.badbutton {
+    display: flex;
+    justify-content: center;
+    padding: 7px 15px;
+    margin-top: 1.5px;
+    margin-bottom: 1.5px;
+    font-size: 20px;
+    background-color: #aa7d7d;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.badbutton:hover {
+    background-color: #db1515bc;
+    transform: scale(1.035);
+    box-shadow: 0 0 20px 10px #764141;
+}
+
 .deadbutton {
     display: flex;
     justify-content: center;
@@ -49,7 +93,7 @@ button:hover {
     margin-top: 1.5px;
     margin-bottom: 1.5px;
     font-size: 20px;
-    background-color: #a7a7a7bc;
+    background-color: #8e8e8ebc;
     font-family: 'IBM Plex Sans', sans-serif;
     color: rgb(255, 255, 255);
     border: 1px solid #ccc;
@@ -59,9 +103,31 @@ button:hover {
 }
 
 .deadbutton:hover {
-    background-color: #a04545;
+    background-color: #ac7171;
     transform: scale(1.01);
-    box-shadow: 0 0 30px 10px #bd000087;
+    box-shadow: 0 0 30px 10px #ab5a5a87;
+}
+
+.disablebutton {
+    display: flex;
+    justify-content: center;
+    padding: 7px 15px;
+    margin-top: 1.5px;
+    margin-bottom: 1.5px;
+    font-size: 20px;
+    background-color: #bebebebc;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.disablebutton:hover {
+    background-color: #a19e9e;
+    transform: scale(1.00);
+    box-shadow: 0 0 30px 10px #9d969687;
 }
 
 .boughtbutton {
@@ -81,9 +147,9 @@ button:hover {
 }
 
 .boughtbutton:hover {
-    background-color: #9f33d1;
+    background-color: #3375d1;
     transform: scale(1.01);
-    box-shadow: 0 0 30px 10px #d08aff87;
+    box-shadow: 0 0 30px 10px #0230d387;
 }
 
 
