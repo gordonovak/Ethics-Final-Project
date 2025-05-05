@@ -62,5 +62,9 @@
     animation-delay: 0.96s;
 }
 
+.meat > *:nth-child(15) {
+    animation-delay: 1ss;
+}
+
 
 
