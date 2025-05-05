@@ -449,7 +449,6 @@ function computerGuy() {
   if (defense.hasModule("Exec")) {
     t += 2000;
     setTimeout(function () {
-      document.getElementById("hacking").style.color = "red";
       document.getElementById("hacking").innerText =
         "Plus an executive vacation...";
     }, time(t));
