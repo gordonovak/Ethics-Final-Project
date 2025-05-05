@@ -405,7 +405,7 @@ function updateButtons() {
 }
 
 function time(t) {
-  return t * 0.5;
+  return t * 0.75;
 }
 
 function getRandomInt(min, max) {
@@ -428,14 +428,14 @@ function computerGuy() {
   defense.setOrigBreach(defense.getBreach());
   defense.setOrigPhys(defense.getPhys());
 
-  t += 2000;
+  t += 4000;
   setTimeout(function () {
     document.getElementById("hacking").innerText = "Tabulating Modules...";
   }, time(t));
 
   let mod = 0;
   let es = "";
-  t += 2000;
+  t += 3000;
   if (defense.hasModule("Exec")) {
     mod--;
   }
@@ -447,7 +447,7 @@ function computerGuy() {
       "You Have: " + (defense.getLength() + mod) + " Module" + es;
   }, time(t));
   if (defense.hasModule("Exec")) {
-    t += 1500;
+    t += 2000;
     setTimeout(function () {
       document.getElementById("hacking").style.color = "red";
       document.getElementById("hacking").innerText =
@@ -664,10 +664,10 @@ function computerGuy() {
         document.getElementById("results").style.display = 'block';
         document.getElementById("passing").innerText = "You installed " + (defense.getLength() + mod) + " modules.";
         document.getElementById("rflavor1").innerText = "Out of all 3 local breach tests, you survived " + physSurvive + ", with a total strength of "+physTotal;
-        document.getElementById("rflavor2").innerText = "This resulted in "+(5340000*physSurvive/3) + " patient records being compromised.";
+        document.getElementById("rflavor2").innerText = "This resulted in "+(5340000*((3-physSurvive)/3)) + " patient records being compromised.";
 
         document.getElementById("rflavor3").innerText = "Out of all 3 external breach tests, you survived " + breachSurvive + ", with a total strength of "+breachTotal;
-        document.getElementById("rflavor4").innerText = "This resulted in "+(2505000*breachSurvive/breachTotal) + " patient records being compromised.";
+        document.getElementById("rflavor4").innerText = "This resulted in "+(2505000*((3-breachSurvive)/3)) + " patient records being compromised.";
 
         if (physSurvive+breachSurvive==6){
             document.getElementById("finresult").style.color = "green";
